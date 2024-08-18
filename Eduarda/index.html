@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/extends.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <a href="/">
+                <img src="./assets/Eduarda Emilli.svg" alt="Eduarda Emilli">
+            </a>
+            <ul class="navbar__links">
+                <li><a href="#header">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
+            <div class="navbar__mobile">
+                <img src="./assets/bars-solid.svg" alt="menu" class="burguer" />
+                <ul class="mobile__links">
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header id="header" class="max-width">
+        <div class="header__left">
+            <h1>Desenvolvedora Frontend</h1>
+            <p>
+                Olá! Bem-vindo(a) ao meu site pessoal. Aqui você encontra um pouco sobre quem eu sou, e alguns projetos
+                que já fiz.
+            </p>
+            <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+        </div>
+    </header>
+
+    <!-- Sobre -->
+    <section id="about" class="about max-width">
+        <div class="about__left">
+            <h2 class="secondary-title">Sobre mim</h2>
+        </div>
+        <div class="about__right">
+            <p>
+                Me chamo Eduarda, tenho 22 anos e atualmente, estou cursando Análise e
+                Desenvolvimento de Sistemas. Meu foco de estudos é o front-end, mas também tenho interesse em aprender
+                mais sobre UX/UI. Estou aprofundando os estudos em JavaScript para posteriormente aprender React JS.
+                <br>
+                Gosto de ler, assistir series, meu cantor favorito é Ozzy Osbourne e sou viciada em pizza.
+
+            </p>
+            <p>
+                “O fracasso não é o oposto do sucesso, é parte do sucesso”
+            </p>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projects max-width">
+        <div class="projects__content">
+            <h2 class="secondary-title">Projetos em Destaque</h2>
+        </div>
+        <ul>
+            <li>
+                <div class="image">
+                    <img src="./assets/bikcraft.png" alt="Site sobre vendas de bicicleta">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Bikcraft</h3>
+                    <p>
+                        No projeto Bikcraft eu trabalhei no desenvolvimento completo do <strong>HTML</strong> e CSS. É
+                        bem simples e
+                        intuitivo, simulando a venda de bicicletas.
+                    </p>
+                    <a href="https//eduarda-emilli.github.io/braf--eduarda-emilli/" target="_blank">Saiba mais
+                        &rarr;</a>
+                </div>
+            </li>
+
+            <li class="projects__reversed-list">
+                <div class="image">
+                    <img src="./assets/brafe.png" alt="Sobre sobre vendas de café">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Brafé</h3>
+                    <p>
+                        Site sobre vendas de café, feito primeiramente utilizando apenas HTML e CSS, e depois refatorado
+                        com o <strong>Bootstrap</strong>.
+                    </p>
+                    <a href="https://eduarda-emilli.github.io/braf--eduarda-emilli/" target="_blank">Saiba mais
+                        &rarr;</a>
+                </div>
+            </li>
+
+            <li>
+                <div class="image">
+                    <img src="./assets/optimustech.png" alt="Lading Page">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">OptimusTech</h3>
+                    <p>
+                        Lading page de uma empresa fictícia. Projeto onde pude entender conceitos sobre flexbox,
+                        organização de estilos e noção básica de git para a publicação.
+                    </p>
+                    <a href="https://eduarda-emilli.github.io/eduarda.optimustech.io/" target="_blank">Saiba mais
+                        &rarr;</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- footer  -->
+    <footer id="footer">
+        <div class="footer__content max-width mb-0">
+            <h2 class="tertiary-title mb-s">Vamos conversar?</h2>
+            <p class="mb-m">
+                Ficarei feliz com o seu contato
+            </p>
+
+            <!-- Formulário de Contato -->
+            <form action="/submit" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+
+            <p class="footer__copyright">
+                © 2024 Eduarda Emilli – Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+header {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 90vh; /* Ajusta a altura do header */
+  text-align: center;
+  padding: 0 20px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas da tela */
+}
+
+header .header__left {
+  max-width: 62rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+header .header__left h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem; 
+  
+}
+
+header .header__left p {
+  font-size: 2.2rem; 
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 50rem;
+  text-align: center;
+}
+
+header .header__left .btn {
+  font-size: 2rem; 
+  padding: 10px 20px; 
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 20px; /* Adiciona padding para telas menores */
+  }
+
+  header .header__left h1 {
+    font-size: 4rem; 
+  }
+
+  header .header__left p {
+    font-size: 2rem; 
+    margin: 2rem auto 4rem;
+  }
+}
